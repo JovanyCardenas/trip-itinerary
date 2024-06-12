@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arizona Trip Itinerary</title>
     <link href="styles.css" type="text/css" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 <body>
 <header>
@@ -81,6 +82,20 @@
         <p class="activity"><span class="time">8:00 AM - 9:00 AM:</span> Breakfast and pack up for the trip back.</p>
         <p class="activity"><span class="time">9:00 AM - 5:00 PM:</span> Drive from Lake Havasu to Santa Maria, CA (380 miles, 8 hours).</p>
         <p class="activity"><span class="time">5:00 PM - Onwards:</span> Arrive home, unpack, and relax.</p>
+    </div>
+    <div class="gas-calculator">
+        <form onsubmit="calculate()">
+            <label for="fuel-mpg">Enter Miles Per Gallon</label>
+            <input type="text" name="fuel-mpg" id="fuel-mpg" required>
+            <label for="miles-traveled">Miles Traveled</label>
+            <input type="text" name="miles-traveled" id="miles-traveled" required>
+            <label for="cost-per-gallon">Cost Per Gallon</label>
+            <input type="text" name="cost-per-gallon" id="cost-per-gallon" required>
+            <br>
+            <label for="people-split">How many people are splitting it?</label>
+            <input type="text" name="people-split" id="people-split">
+            <button type="submit">Calculate</button>
+        </form>
     </div>
 </div>
 </body>
