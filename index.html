@@ -84,21 +84,6 @@
         <p class="activity"><span class="time">9:00 AM - 5:00 PM:</span> Drive from Lake Havasu to Santa Maria, CA (380 miles, 8 hours).</p>
         <p class="activity"><span class="time">5:00 PM - Onwards:</span> Arrive home, unpack, and relax.</p>
     </div>
-    <div class="gas-calculator">
-        <form onsubmit="calculate()">
-            <label for="fuel-mpg">Enter Miles Per Gallon</label>
-            <input type="text" name="fuel-mpg" id="fuel-mpg" required>
-            <label for="miles-traveled">Miles Traveled</label>
-            <input type="text" name="miles-traveled" id="miles-traveled" required>
-            <label for="cost-per-gallon">Cost Per Gallon</label>
-            <input type="text" name="cost-per-gallon" id="cost-per-gallon" required><br>
-            <br>
-            <label for="people-split">How many people are splitting it?</label>
-            <input type="text" name="people-split" id="people-split">
-            <button type="submit">Calculate</button>
-        </form>
-    </div>
-    <br><hr>
     <div class="costs">
         <h2>Total Cost for the Trip for Each Person</h2>
         <p><strong>Area 15 Pass:</strong> $124</p>
@@ -106,7 +91,23 @@
         <p><strong>Superkarts:</strong> $35</p>
         <p><strong>Airbnb:</strong> $34.20</p>
         <p><strong>Gas:</strong> $..</p>
+
+        <div class="gas-calculator">
+            <form onsubmit="calculate()">
+                <label for="fuel-mpg">Enter Miles Per Gallon</label>
+                <input type="text" name="fuel-mpg" id="fuel-mpg" required>
+                <label for="miles-traveled">Miles Traveled</label>
+                <input type="text" name="miles-traveled" id="miles-traveled" required>
+                <label for="cost-per-gallon">Cost Per Gallon</label>
+                <input type="text" name="cost-per-gallon" id="cost-per-gallon" required value="3.20"><br>
+                <br>
+                <label for="people-split">How many people are splitting it?</label>
+                <input type="text" name="people-split" id="people-split" value="5">
+                <button type="submit">Calculate</button>
+            </form>
+        </div>
     </div>
+    <br><hr>
 </div>
 </body>
 </html>
