@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Trip Itinerary Template</title>
+    <link rel="stylesheet" href="other/styles.css" />
+    <script defer src="other/script.js"></script>
+</head>
+<body>
+<header>
+    <h1>Trip Itinerary</h1>
+    <p class="note">*Times are approximate and may change depending on the trip*</p>
+</header>
+
+<main class="container">
+
+    <!-- SAMPLE DAY TEMPLATE -->
+    <section class="day">
+        <h2>Friday, August 15: Travel to Destination</h2>
+        <p class="activity"><span class="time">7:00 AM:</span> Depart from home.</p>
+        <p class="activity"><span class="time">12:00 PM:</span> Lunch stop in Bakersfield.</p>
+        <p class="activity"><span class="time">3:00 PM:</span> Arrive at Airbnb and check-in.</p>
+        <p class="activity highlight">Drive Duration: ~6 hours (300 miles)</p>
+    </section>
+
+    <!-- COPY THIS BLOCK FOR ADDITIONAL DAYS -->
+    <section class="day">
+        <h2>Saturday, August 16: Local Activities</h2>
+        <p class="activity"><span class="time">9:00 AM:</span> Breakfast at local café.</p>
+        <p class="activity"><span class="time">10:30 AM - 2:00 PM:</span> Visit National Park.</p>
+        <p class="activity"><span class="time">2:30 PM - 4:00 PM:</span> Explore downtown shops.</p>
+        <p class="activity"><span class="time">6:00 PM:</span> Dinner reservation at The Grill.</p>
+    </section>
+
+    <!-- COST SECTION -->
+    <section class="costs">
+        <h2>Total Estimated Cost Per Person</h2>
+        <ul>
+            <li><strong>Park Pass:</strong> ~~</li>
+            <li><strong>Airbnb (2 nights):</strong> ~~</li>
+            <li><strong>Meals & Misc:</strong> ~~</li>
+            <li><strong>Gas:</strong> (calculated below)</li>
+        </ul>
+
+        <div class="gas-calculator">
+            <h3>Gas Cost Calculator</h3>
+            <form id="gasForm" onsubmit="calculate(event)">
+                <label for="fuel-mpg">Miles Per Gallon (MPG):</label>
+                <input type="number" id="fuel-mpg" name="fuel-mpg" value="40" required />
+
+                <label for="miles-traveled">Total Miles Traveled:</label>
+                <input type="number" id="miles-traveled" name="miles-traveled" required />
+
+                <label for="cost-per-gallon">Cost Per Gallon ($):</label>
+                <input type="number" id="cost-per-gallon" name="cost-per-gallon" step="0.01" value="3.80" required />
+
+                <label for="people-split">Number of People Splitting:</label>
+                <input type="number" id="people-split" name="people-split" value="3" required />
+
+                <button type="submit">Calculate</button>
+            </form>
+            <p id="gas-result"></p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Trip Planner</p>
+</footer>
+</body>
+</html>
