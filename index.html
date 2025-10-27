@@ -3,66 +3,90 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Trip Itinerary Template</title>
+    <title>Vancouver Trip Itinerary</title>
+
+    <!-- You can reuse your same stylesheet -->
     <link rel="stylesheet" href="other/styles.css" />
-    <script defer src="other/script.js"></script>
 </head>
 <body>
 <header>
-    <h1>Trip Itinerary</h1>
-    <p class="note">*Times are approximate and may change depending on the trip*</p>
+    <h1>Vancouver / Victoria Trip Itinerary</h1>
+    <p class="note">*Times are approximate and will be updated once flights / ferry are confirmed*</p>
 </header>
 
 <main class="container">
 
-    <!-- SAMPLE DAY TEMPLATE -->
+    <!-- DAY 1 -->
     <section class="day">
-        <h2>Friday, August 15: Travel to Destination</h2>
-        <p class="activity"><span class="time">7:00 AM:</span> Depart from home.</p>
-        <p class="activity"><span class="time">12:00 PM:</span> Lunch stop in Bakersfield.</p>
-        <p class="activity"><span class="time">3:00 PM:</span> Arrive at Airbnb and check-in.</p>
-        <p class="activity highlight">Drive Duration: ~6 hours (300 miles)</p>
+        <h2>Thursday, November 6: Fly to Seattle</h2>
+        <p class="activity"><span class="time">TBD (Afternoon):</span> Depart from San Luis Obispo (SBP) ✈️ Seattle (SEA).</p>
+        <p class="activity"><span class="time">TBD:</span> Arrive in Seattle.</p>
+        <p class="activity"><span class="time">TBD:</span> Shuttle / rideshare to hotel near SEA, check in and rest.</p>
+        <p class="activity highlight">Overnight: Hotel near Seattle Airport.</p>
+        <p class="activity"><span class="time">Notes:</span> Pick up rental car next morning, not tonight.</p>
     </section>
 
-    <!-- COPY THIS BLOCK FOR ADDITIONAL DAYS -->
+    <!-- DAY 2 -->
     <section class="day">
-        <h2>Saturday, August 16: Local Activities</h2>
-        <p class="activity"><span class="time">9:00 AM:</span> Breakfast at local café.</p>
-        <p class="activity"><span class="time">10:30 AM - 2:00 PM:</span> Visit National Park.</p>
-        <p class="activity"><span class="time">2:30 PM - 4:00 PM:</span> Explore downtown shops.</p>
-        <p class="activity"><span class="time">6:00 PM:</span> Dinner reservation at The Grill.</p>
+        <h2>Friday, November 7: Drive to Vancouver / Check-in</h2>
+        <p class="activity"><span class="time">Morning (TBD):</span> Pick up rental car at/near SEA.</p>
+        <p class="activity"><span class="time">Morning/Late Morning:</span> Drive from Seattle, WA → West Vancouver, BC (~3 hrs driving + border).</p>
+        <p class="activity"><span class="time">TBD (Afternoon):</span> Arrive at Airbnb in West Vancouver and check in.</p>
+        <p class="activity"><span class="time">Afternoon/Evening:</span> Groceries / settle in / casual dinner nearby.</p>
+        <p class="activity highlight">Border reminder: All passengers need passports ready for US→Canada and return.</p>
     </section>
 
-    <!-- COST SECTION -->
-    <section class="costs">
-        <h2>Total Estimated Cost Per Person</h2>
-        <ul>
-            <li><strong>Park Pass:</strong> ~~</li>
-            <li><strong>Airbnb (2 nights):</strong> ~~</li>
-            <li><strong>Meals & Misc:</strong> ~~</li>
-            <li><strong>Gas:</strong> (calculated below)</li>
-        </ul>
-
-        <div class="gas-calculator">
-            <h3>Gas Cost Calculator</h3>
-            <form id="gasForm" onsubmit="calculate(event)">
-                <label for="fuel-mpg">Miles Per Gallon (MPG):</label>
-                <input type="number" id="fuel-mpg" name="fuel-mpg" value="40" required />
-
-                <label for="miles-traveled">Total Miles Traveled:</label>
-                <input type="number" id="miles-traveled" name="miles-traveled" required />
-
-                <label for="cost-per-gallon">Cost Per Gallon ($):</label>
-                <input type="number" id="cost-per-gallon" name="cost-per-gallon" step="0.01" value="3.80" required />
-
-                <label for="people-split">Number of People Splitting:</label>
-                <input type="number" id="people-split" name="people-split" value="3" required />
-
-                <button type="submit">Calculate</button>
-            </form>
-            <p id="gas-result"></p>
-        </div>
+    <!-- DAY 3 -->
+    <section class="day">
+        <h2>Saturday, November 8: Vancouver Day</h2>
+        <p class="activity"><span class="time">Morning (TBD):</span> Breakfast in Vancouver.</p>
+        <p class="activity"><span class="time">Late Morning - Afternoon:</span> Explore Vancouver (Stanley Park seawall, Capilano / suspension bridge area, Granville Island, etc.).</p>
+        <p class="activity"><span class="time">Evening:</span> Dinner in the city and relax back at Airbnb.</p>
+        <p class="activity highlight">Parking in downtown Vancouver can be tight and paid — plan for that.</p>
     </section>
+
+    <!-- DAY 4 -->
+    <section class="day">
+        <h2>Sunday, November 9: Day Trip to Victoria (Ferry)</h2>
+        <p class="activity"><span class="time">Early Morning (TBD):</span> Drive to ferry terminal.</p>
+        <p class="activity"><span class="time">TBD:</span> Ferry to Victoria, BC (Vancouver Island). ⛴️</p>
+        <p class="activity"><span class="time">Daytime:</span> Walk around downtown Victoria (Inner Harbour, Parliament buildings area, shops / food).</p>
+        <p class="activity"><span class="time">Evening (TBD):</span> Ferry back to mainland and return to Airbnb.</p>
+        <p class="activity highlight">Reminder: Bring passports with you for ferry/ID checks.</p>
+    </section>
+
+    <!-- DAY 5 -->
+    <section class="day">
+        <h2>Monday, November 10: Free Day in Vancouver</h2>
+        <p class="activity"><span class="time">Options:</span> 
+            Shopping / sightseeing / chill day. Ideas:
+            Gastown, Science World, English Bay, Lions Gate views, etc.
+        </p>
+        <p class="activity"><span class="time">Evening:</span> Pack up for checkout and drive back the next morning.</p>
+        <p class="activity highlight">This is also a flex day in case weather moves the Victoria ferry plan.</p>
+    </section>
+
+    <!-- DAY 6 -->
+    <section class="day">
+        <h2>Tuesday, November 11: Return Home</h2>
+        <p class="activity"><span class="time">Morning (TBD):</span> Check out of Airbnb in West Vancouver.</p>
+        <p class="activity"><span class="time">Morning/Late Morning:</span> Drive from Vancouver, BC → Seattle, WA (border crossing back into U.S.).</p>
+        <p class="activity"><span class="time">TBD (Afternoon/Evening):</span> Return rental car at SEA.</p>
+        <p class="activity"><span class="time">TBD:</span> Flight Seattle (SEA) ✈️ San Luis Obispo (SBP).</p>
+        <p class="activity"><span class="time">+30 min drive:</span> Drive from SBP back to Santa Maria (home).</p>
+        <p class="activity highlight">End of trip 💙</p>
+    </section>
+
+    <!-- OPTIONAL TRIP NOTES -->
+    <section class="day">
+        <h2>Trip Notes</h2>
+        <p class="activity"><span class="time">Hotel (11/6):</span> Seattle airport area (TBD).</p>
+        <p class="activity"><span class="time">Airbnb (11/7–11/11):</span> West Vancouver (address / check-in code TBD).</p>
+        <p class="activity"><span class="time">Rental Car:</span> Pickup at SEA 11/7 morning, return 11/11 at SEA.</p>
+        <p class="activity"><span class="time">Documents:</span> Passports required for border + ferry.</p>
+        <p class="activity"><span class="time">Currency:</span> CAD for Vancouver / Victoria (card is usually fine but note foreign transaction fees).</p>
+    </section>
+
 </main>
 
 <footer>
